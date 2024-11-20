@@ -1,0 +1,15 @@
+<% @posts.each do |post| %>
+  <div class="post">
+    <% if post.image.attached? %>
+      <p>Posteado por: <%= post.user.email %></p>
+      <%= image_tag post.image %>
+    <% else %>
+      <p>No hay imagen disponible.</p>
+    <% end %>
+    <p><%= post.description %></p>
+    <!-- Eliminar -->
+    <%= button_to 'Eliminar', post_path(post), method: :delete, data: { confirm: '¿Estas seguro de que deseas eliminar este post?' }, class: 'btn btn-danger' %>
+    <br></br>
+    <%= link_to 'Actualizar', edit_post_path(post), class: 'btn btn-warning' %>
+  </div>
+<% end %>

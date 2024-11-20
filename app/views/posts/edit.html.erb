@@ -1,0 +1,13 @@
+<%= form_with model: @post, local: true do |form| %>
+    <div class="field">
+       <%= form.label :image %>
+       <%= form.file_field :image %>
+    </div>
+    <div class="field">
+       <%= form.label :description %>
+       <%= form.text_area :description %>
+    </div>
+    <div class="actions">
+       <%= form.submit "Actualizar Post", class: "btn btn-primary" %>
+    </div>
+<% end %>

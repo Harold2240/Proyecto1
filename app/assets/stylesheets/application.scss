@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ 
+ // Estilos personalizados
+ body {
+   background-color: #f8f9fa; /* Color de fondo suave */
+ }
+ 
+ .navbar {
+   margin-bottom: 20px; /* Espacio debajo de la barra de navegación */
+ }
+ 
+ .post {
+   border: 1px solid #ddd; /* Borde alrededor de cada post */
+   border-radius: 5px; /* Bordes redondeados */
+   margin-bottom: 20px; /* Espacio entre posts */
+   padding: 15px; /* Espacio interno */
+   background-color: #fff; /* Fondo blanco para los posts */
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+ }
+ 
+ .btn {
+   margin-right: 5px; /* Espacio entre botones */
+ }
+ 
+ .alert {
+   margin-top: 10px; /* Espacio entre las alertas y el contenido */
+ }
+ 
